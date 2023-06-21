@@ -92,7 +92,7 @@ export default class Basket {
             console.log('backToProductsButton',backToProductsButton)
             backToProductsButton.addEventListener('click', () =>{
 
-            window.location.pathname = '/ofog/views/products.html/';
+            window.location.pathname = '/ofog/views/products.html';
 
         })
 
@@ -134,7 +134,7 @@ export default class Basket {
 
         basketIcon.addEventListener('click', () => {
 
-            window.location.pathname = '/ofog/views/basket.html/';
+            window.location.pathname = '/ofog/views/basket.html';
         })
 
         

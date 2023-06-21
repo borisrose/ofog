@@ -115,12 +115,12 @@ export default class Products {
 
         logoutIcon.addEventListener('click', () => {
             localStorage.removeItem('user');
-            window.location.pathname = '/ofog';
+            window.location.pathname = '/ofog/';
         })
 
         basketIcon.addEventListener('click', () => {
 
-            window.location.pathname = '/ofog/views/basket.html/';
+            window.location.pathname = '/ofog/views/basket.html';
         })
 
 

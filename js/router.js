@@ -10,11 +10,11 @@ const routes = [
         component: Home
     },
     {
-        path:'/ofog/views/products.html/',
+        path:'/ofog/views/products.html',
         component: Products
     },
     {
-        path:'/ofog/views/basket.html/',
+        path:'/ofog/views/basket.html',
         component: Basket
     }
 
