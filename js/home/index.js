@@ -15,7 +15,7 @@ export default class Home {
         const cachedUser = localStorage.getItem('user')
 
         if(cachedUser){
-            window.location.pathname = '/views/products.html'
+            window.location.pathname = 'ofog/views/products.html'
         }
     
 

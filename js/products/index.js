@@ -22,7 +22,7 @@ export default class Products {
         
 
         if(!cachedUser){
-            window.location.pathname ='/index.html'
+            window.location.pathname ='/ofog'
             return
         }
        
@@ -115,12 +115,12 @@ export default class Products {
 
         logoutIcon.addEventListener('click', () => {
             localStorage.removeItem('user');
-            window.location.pathname = '/index.html';
+            window.location.pathname = '/ofog';
         })
 
         basketIcon.addEventListener('click', () => {
 
-            window.location.pathname = '/views/basket.html';
+            window.location.pathname = 'ofog/views/basket.html';
         })
 
 
