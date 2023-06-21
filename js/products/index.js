@@ -120,7 +120,7 @@ export default class Products {
 
         basketIcon.addEventListener('click', () => {
 
-            window.location.pathname = 'ofog/views/basket.html';
+            window.location.pathname = '/ofog/views/basket.html/';
         })
 
 

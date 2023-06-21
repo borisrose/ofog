@@ -15,7 +15,7 @@ export default class Home {
         const cachedUser = localStorage.getItem('user')
 
         if(cachedUser){
-            window.location.pathname = 'ofog/views/products.html'
+            window.location.pathname = '/ofog/views/products.html/'
         }
     
 
@@ -59,7 +59,7 @@ export default class Home {
 
                     console.log('user exists', user)
                     localStorage.setItem('user', JSON.stringify(user))
-                    window.location.pathname = '/views/products.html'
+                    window.location.pathname = '/ofog/views/products.html/'
                 }
                 else {
 

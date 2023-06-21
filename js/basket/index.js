@@ -42,7 +42,7 @@ export default class Basket {
         
 
         if(!cachedUser){
-            window.location.pathname ='/ofog'
+            window.location.pathname ='/ofog/'
             return
         }
        
@@ -92,7 +92,7 @@ export default class Basket {
             console.log('backToProductsButton',backToProductsButton)
             backToProductsButton.addEventListener('click', () =>{
 
-            window.location.pathname = '/ofog/views/products.html';
+            window.location.pathname = '/ofog/views/products.html/';
 
         })
 
@@ -129,12 +129,12 @@ export default class Basket {
 
         logoutIcon.addEventListener('click', () => {
             localStorage.removeItem('user');
-            window.location.pathname = '/ofog';
+            window.location.pathname = '/ofog/';
         })
 
         basketIcon.addEventListener('click', () => {
 
-            window.location.pathname = '/ofog/views/basket.html';
+            window.location.pathname = '/ofog/views/basket.html/';
         })
 
         
