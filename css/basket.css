@@ -1,0 +1,210 @@
+#main-article {
+
+    display: flex;
+
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    animation: pageAnimation 1000ms ease-in-out forwards;
+
+}
+
+
+#main-article-header {
+    /*border: solid pink 3px;*/
+    background-color: var(--dark-gray-color);
+    height:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+#main-article-content {
+
+    display: flex;
+   
+    height: 85%;
+
+    
+}
+
+#basket-products-number-span {
+
+    font-weight: bold;
+
+}
+
+
+#back-to-products-page-button {
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+#back-to-products-page-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.basket-container--no-article {
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+}
+
+.basket-container--no-article button {
+    margin-top: 30px;
+}
+
+
+
+/*grid*/
+#basket-section {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+#basket-section__title {
+
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0px;
+
+}
+
+#basket-container {
+
+
+   display: flex;
+   flex-direction: column;
+  
+
+}
+
+
+
+.basket-container__titles-row {
+
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(60px, auto);
+    display: grid;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.basket-container__title-box {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1;
+  
+}
+
+.basket-container__items-container {
+    display: grid;
+   grid-template-rows: auto;
+   grid-template-columns: repeat(3, 1fr);
+  
+}
+
+
+.basket-item {
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-column: 1 / 4;
+    width: 100%;
+
+    justify-content: space-evenly;
+    
+
+}
+
+.basket-item__figurine-container, .basket-item__unitary-price-container, .basket-item__quantity-container{
+    grid-row: 1;
+
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.basket-item__quantity-container {
+
+    justify-content: space-evenly;
+}
+
+#basket-item__quantity-input {
+    width: 5%;
+    outline: none;
+ 
+
+}
+
+#basket-item__quantity-input::placeholder {
+
+    color: black;
+}
+
+.basket-item__delete-button {
+   border: none;
+   background-color: white;
+    opacity: 0.8;
+    text-decoration: underline;
+    color: red;
+}
+
+.basket-item__delete-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.basket-container__total-amount-container {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 0;
+  
+
+}
+
+
+.basket-container__total-amount-container span:last-of-type {
+
+    color: red;
+    font-weight: 600;
+    font-size: 40px;
+
+
+}
+
+@keyframes pageAnimation {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}

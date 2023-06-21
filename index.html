@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="fr" dir="ltr">
+
+
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="author" content="oFog">
+        <meta name="description" content="oFog : Figurines et Statuettes à vendre">
+        <meta name="keywords" content="figurines, statuettes, France, oFog, vente">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>oFog HomePage</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./global.css">
+        <link rel="stylesheet" href="./css/home.css">
+        <script src="https://kit.fontawesome.com/3b3c8e71e5.js" crossorigin="anonymous"></script>
+
+
+    </head>
+
+    <body>
+
+            <!-- HEADER -->
+
+            <header id="body-header">
+
+
+                <div id="body-header__main-title-container">
+
+                    <h1> oFig </h1>
+                    <span id="body-header-span" aria-label="oFig products"> Figurines et statuettes </span>
+
+                </div>
+        
+                <div id="body-header__login-icon-container">
+             
+                </div>
+        
+
+
+            </header>
+
+        <!-- END OF HEADER -->
+
+        <!-- MAIN -->
+
+        <main>
+
+            <section id="home-section">
+
+
+                <header id="home-section__header-container">
+
+                    <h1> oFig </h1>
+                    <h2> Figurines et Statuettes </h2>
+
+                </header>
+            
+
+                <form id="home-section__form">
+
+
+
+                    <div class="home-section__form__inputs-container">
+
+
+                        <div class="home-section__form__input-container">
+                            <label for="email"></label>
+                            <input id="email" 
+                            class="home-section__form__input"
+                            type="email"
+                            name="email"
+                            placeholder="Entrez votre email"
+                            title="ex: jean@gmail.com"
+                            pattern="[a-z.]{2,10}[@]{1}[a-z]{2,10}[.]{1}[a-z]{2,10}"
+                            required
+                            >
+                        </div>
+    
+                        <div class="home-section__form__input-container">
+                            <label for="password"></label>
+                            <input id="password" 
+                            class="home-section__form__input"
+                            type="password"
+                            name="password"
+                            placeholder="Entrez votre mot de passe"
+                            pattern="[a-z!?éèùïû]{8,12}"
+                            title="Entre 8 et 12 caractères"
+                            required
+                            >
+                        </div>
+
+
+                    </div>
+
+                    <div class="home-section__form__buttons-container">
+                        <button type="submit"> Se connecter </button>
+                        <button type="reset"> Réinitialiser </button>
+                    </div>
+                   
+
+
+
+                </form>
+
+            </section>
+
+
+        </main>
+        <!--- END OF THE MAIN -->
+
+        <!-- FOOTER -->
+
+        <footer id="body-footer">
+            <p>oFig-toutes les images sont sous copyright SquareEnix</p>
+        </footer>
+
+
+        <!-- END OF FOOTER -->
+
+
+         <script type="module">
+
+            import { App } from "./App.js";
+
+            App()
+
+         </script>
+
+   
+
+    </body>
+
+
+
+
+</html>
+
+
+
+
+
