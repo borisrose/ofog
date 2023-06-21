@@ -6,15 +6,15 @@ const routes = [
 
 
     {
-        path: "/PROJET_OFOG/index.html",
+        path: "/index.html",
         component: Home
     },
     {
-        path:'/PROJET_OFOG/views/products.html',
+        path:'/views/products.html',
         component: Products
     },
     {
-        path:'/PROJET_OFOG/views/basket.html',
+        path:'/views/basket.html',
         component: Basket
     }
 
