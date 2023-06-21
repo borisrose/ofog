@@ -22,7 +22,7 @@ export default class Products {
         
 
         if(!cachedUser){
-            window.location.pathname ='/ofog'
+            window.location.pathname ='/ofog/'
             return
         }
        
@@ -40,7 +40,7 @@ export default class Products {
 
               figurineCount += fig.quantity 
 
-              console.log('fig.quantity: ', fig.quantity)
+    
 
             })
 
@@ -67,11 +67,11 @@ export default class Products {
 
             const addToCardButtons = document.getElementsByClassName('add-to-cart-button')
 
-            console.log(addToCardButtons)
+
 
             const addButtonsArray = Array.from(addToCardButtons)
 
-            console.log(addButtonsArray)
+    
 
             addButtonsArray.forEach(button => {
 

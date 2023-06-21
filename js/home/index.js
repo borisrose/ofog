@@ -27,14 +27,14 @@ export default class Home {
 
                 if(e.target.name === 'email'){
                     const checkingResult = inputsChecker(e.target.value, 'email')
-                    console.log('checkingResult', checkingResult)
+               
                     this.email = e.target.value
                 }
 
                 if(e.target.name === 'password'){
 
                     const checkingResult = inputsChecker(e.target.value, 'password')
-                    console.log('checkingResult', checkingResult)
+        
                     this.password = e.target.value
                 }
    

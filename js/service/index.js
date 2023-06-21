@@ -4,7 +4,7 @@ export default {
     async fetchFigurinesFromDB(){
 
         const data =  await(await fetch('../database.json')).json()
-        console.log('data', data.figurines)
+
         return data.figurines
     },
 
@@ -27,7 +27,7 @@ export default {
     async fetchUsersFromDB(){
 
         const data =  await(await fetch('database.json')).json()
-        console.log('data', data.users)
+
         return data.users
     },
 
@@ -57,7 +57,7 @@ export default {
 
         let productId = typeof identifier === 'string' ? parseInt(identifier,10) : identifier;
 
-        console.log('productId', productId)
+
 
 
 
@@ -68,7 +68,7 @@ export default {
 
             let basket = JSON.parse(rawBasket)
            
-            console.log('basket', basket)
+  
 
             const exUser = basket.users.find(user => user.id === userId)
 
@@ -293,7 +293,7 @@ export default {
                 let oneFigurine;
                 oneFigurine = await this.fetchFigurineFromDBById(productId)
 
-                console.log('one figurine ', oneFigurine)
+       
 
                 let user = {
     

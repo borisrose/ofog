@@ -64,7 +64,7 @@ export default class Basket {
 
       
 
-              console.log('fig.quantity: ', fig.quantity)
+      
 
             })
 
@@ -78,7 +78,7 @@ export default class Basket {
         
 
       
-        console.log('this.basket', this.basket)
+
     
 
 
@@ -89,7 +89,7 @@ export default class Basket {
 
             basketItemsCountSpan.innerHTML = '0 article'
             const backToProductsButton = document.getElementById('back-to-products-page-button');
-            console.log('backToProductsButton',backToProductsButton)
+       
             backToProductsButton.addEventListener('click', () =>{
 
             window.location.pathname = '/ofog/views/products.html';
